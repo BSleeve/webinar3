@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Anasayfa - Koç Holding Emekli Vakfı Webinar Katılım Portalı</title>
-    <link rel="shortcut icon" href="Anasayfa - Koç Holding Emekli Vakfı Webinar Katılım Portalı_files/favicon.png">
-    <link href="Anasayfa - Koç Holding Emekli Vakfı Webinar Katılım Portalı_files/app.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Anasayfa%20-%20Koç%20Holding%20Emekli%20Vakfı%20Webinar%20Katılım%20Portalı_files/favicon.png">
+    <link href="Anasayfa%20-%20Koç%20Holding%20Emekli%20Vakfı%20Webinar%20Katılım%20Portalı_files/app.min.css" rel="stylesheet">
     <style>
         .page-container {
             background: #f7f7f7;
@@ -57,8 +57,8 @@
             <div class="header">
                 <div class="logo logo-dark">
                     <a href="/anasayfa">
-                        <img src="Anasayfa - Koç Holding Emekli Vakfı Webinar Katılım Portalı_files/emek_logo.png" style="width:100%" alt="Logo">
-                        <img class="logo-fold" src="Anasayfa - Koç Holding Emekli Vakfı Webinar Katılım Portalı_files/favicon.png" style="width:100%" alt="Logo">
+                        <img src="Anasayfa%20-%20Koç%20Holding%20Emekli%20Vakfı%20Webinar%20Katılım%20Portalı_files/emek_logo.png" style="width:100%" alt="Logo">
+                        <img class="logo-fold" src="Anasayfa%20-%20Koç%20Holding%20Emekli%20Vakfı%20Webinar%20Katılım%20Portalı_files/favicon.png" style="width:100%" alt="Logo">
                     </a>
                 </div>
                 <div class="nav-wrap">
@@ -95,7 +95,7 @@
                         </div>
                         <div class="col-12"
                              style="text-align:center;display: flex; justify-content: center; align-items: center; height: 40vh;">
-                            <img style="width: 400px;" src="Anasayfa - Koç Holding Emekli Vakfı Webinar Katılım Portalı_files/logo.png" alt="">
+                            <img style="width: 400px;" src="Anasayfa%20-%20Koç%20Holding%20Emekli%20Vakfı%20Webinar%20Katılım%20Portalı_files/logo.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -106,53 +106,53 @@
     </div>
 
     <!-- Core Vendors JS -->
-    <script src="Anasayfa - Koç Holding Emekli Vakfı Webinar Katılım Portalı_files/vendors.min.js"></script>
-    <script src="Anasayfa - Koç Holding Emekli Vakfı Webinar Katılım Portalı_files/pages/dashboard-default.js"></script>
+    <script src="Anasayfa%20-%20Koç%20Holding%20Emekli%20Vakfı%20Webinar%20Katılım%20Portalı_files/vendors.min.js"></script>
+    <script src="Anasayfa%20-%20Koç%20Holding%20Emekli%20Vakfı%20Webinar%20Katılım%20Portalı_files/pages/dashboard-default.js"></script>
 
-<!-- Core JS -->
-<script src="Anasayfa - Koç Holding Emekli Vakfı Webinar Katılım Portalı_files/app.min.js"></script>
+    <!-- Core JS -->
+    <script src="Anasayfa%20-%20Koç%20Holding%20Emekli%20Vakfı%20Webinar%20Katılım%20Portalı_files/app.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
 
-<script>
-    const menuItems = document.querySelectorAll('.side-nav-menu > .nav-item');
+    <script>
+        const menuItems = document.querySelectorAll('.side-nav-menu > .nav-item');
 
-    menuItems.forEach((menuItem) => {
-        const anchor = menuItem.querySelector('a');
+        menuItems.forEach((menuItem) => {
+            const anchor = menuItem.querySelector('a');
 
-        if (anchor && anchor.getAttribute('href') === window.location.pathname) {
-            menuItem.classList.add('active-navbar');
+            if (anchor && anchor.getAttribute('href') === window.location.pathname) {
+                menuItem.classList.add('active-navbar');
+            }
+
+            const dropdownMenu = menuItem.querySelector('.dropdown-menu');
+
+            if (dropdownMenu) {
+                const subMenuItems = dropdownMenu.querySelectorAll('li');
+
+                subMenuItems.forEach((subMenuItem) => {
+                    const subMenuAnchor = subMenuItem.querySelector('a');
+
+                    if (subMenuAnchor && subMenuAnchor.getAttribute('href') === window.location.pathname) {
+                        menuItem.classList.add('open');
+                        subMenuItem.classList.add('active');
+                    }
+                });
+            }
+        });
+    </script>
+
+    <script>
+        function kontrolEt() {
+            var checkBox = document.getElementById("sozlesme");
+            var sonucDiv = document.getElementById("message");
+
+            if (checkBox.checked) {
+                $("#sconay").prop('disabled', false);
+            } else {
+                $("#sconay").prop('disabled', true);
+            }
         }
-
-        const dropdownMenu = menuItem.querySelector('.dropdown-menu');
-
-        if (dropdownMenu) {
-            const subMenuItems = dropdownMenu.querySelectorAll('li');
-
-            subMenuItems.forEach((subMenuItem) => {
-                const subMenuAnchor = subMenuItem.querySelector('a');
-
-                if (subMenuAnchor && subMenuAnchor.getAttribute('href') === window.location.pathname) {
-                    menuItem.classList.add('open');
-                    subMenuItem.classList.add('active');
-                }
-            });
-        }
-    });
-</script>
-
-<script>
-    function kontrolEt() {
-        var checkBox = document.getElementById("sozlesme");
-        var sonucDiv = document.getElementById("message");
-
-        if (checkBox.checked) {
-            $("#sconay").prop('disabled', false);
-        } else {
-            $("#sconay").prop('disabled', true);
-        }
-    }
-</script>
+    </script>
 </body>
 </html>
